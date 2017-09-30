@@ -7,13 +7,12 @@ body { font: 12/1.4 "nanum gothic", "malgun gothic", Hevetica, sans-serif verdan
 .tit { padding-bottom: 10px; border-bottom: 1px dashed #ccc; }
 .tit_text { font-size: 48px; font-weight: bold; }
 
-.content { display: block; width: 100%; padding: 15px 0;}
-.content:after { content: ""; clear: both; display: block; }
+.content { display: table; box-sizing: border-box;width: 100%; padding: 15px 0;}
 
-.image_wrap { width: 100px; float: left; margin-right: 20px;}
+.image_wrap { display: table-cell; width: 100px; padding-right: 20px; vertical-align: top; }
 .image_wrap img {width: 100px; height: 150px;}
 
-.detail { width: 440px; float: right; }
+.detail { display: table-cell; vertical-align: top;}
 
 .detail_top { padding-bottom: 8px; margin-bottom: 8px; border-bottom: 1px solid #ccc;}
 .detail_top:after { content: ""; clear: both; display: block; }
