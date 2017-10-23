@@ -1,0 +1,8 @@
+font-size: 18px;
+font-weight: bold;
+color: #000;
+
+* 키보드 화살표 돋보기 이미지는 sprite.png에 모두 있습니다.
+* 클릭시 효과는 필요없고 이미지와 같게 마크업해주세요.
+
+

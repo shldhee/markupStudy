@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * { margin: 0; padding: 0; }
+    .hidden {
+      position: absolute;
+      left: -9999px;
+    }
+    .ir {
+      display: inline-block;
+      text-indent: -9999px;
+    }
+    .clearboth:after {
+      content: '';
+      clear: both;
+      display: block;
+    }
+    #search_box {
+      box-sizing: border-box;
+      width: 524px;
+      height: 44px;
+      margin: 20px auto;
+      border: 2px solid #20c44c;
+    }
+    .input_box {
+      position: relative;
+      float: left;
+      box-sizing: border-box;
+      width: 480px;
+      height: 42px;
+      padding: 10px;
+    }
+    .input_box #search_wrap {
+      vertical-align: top;
+      width: 414px;
+      height: 21px;
+      line-height: 21px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #000;
+      border: none;
+      outline: none;
+    }
+    .input_box .link_wrap {
+      display: inline-block;
+      position: absolute;
+      width: 20px;
+      height: 40px;
+      top:0;
+    }
+    .input_box .link_wrap.arrow {
+      right: 6px;
+    }
+    .input_box .ico {
+      position: relative;
+      display: inline-block;
+      background-image: url(./sprite.png);
+      cursor: pointer;
+    }
+    .input_box .key .ico {
+      top: 14px;
+      width: 19px;
+      height: 11px;
+      background-position: -117px -148px;
+      background-repeat: no-repeat;
+    }
+    .input_box .arrow .ico {
+      top: 18px;
+      left: 5px;
+      width: 9px;
+      height: 4px;
+      background-position: -69px -169px;
+      background-repeat: no-repeat;
+    }
+
+    .submit {
+      float: right;
+      width: 40px;
+      height: 40px;
+      background: #20c44c url(./sprite.png) -167px -58px no-repeat;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="search_box">
+    <form action="#">
+      <filedset class="clearboth" >
+        <legend class="hidden">통합검색</legend>
+        <div class="input_box">
+          <label for=""></label>
+          <input type="text" id="search_wrap">
+          <a class="link_wrap key" href="#"><span class="ico ir">키보드 한/영변환</span></a>
+          <a class="link_wrap arrow" href="#"><span class="ico ir">최근 검색어</span></a>
+        </div>
+        <button class="submit ir" type="submit">제출</button>
+      </filedset>
+    </form>
+  </div>
+</body>
+</html>
