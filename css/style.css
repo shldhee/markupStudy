@@ -21,7 +21,7 @@ body { font: 12px/1.4 "Nanum gothic", "malgun gothic", Helvetica, sans-serif, ve
 .rank_box { position: relative; float: right; }
 .rank_box:after { content: ""; clear: both; display: block; }
 
-.rank_star_wrap {position: relative; top:4px; right: 10px; float: left; width: 74px; height: 12px; }
+.rank_star_wrap {position: relative; top:6px; right: 10px; float: left; width: 74px; height: 12px; }
 
 
 .bg_star, .active_star {position: absolute; top:0; left:0;}
@@ -31,4 +31,4 @@ body { font: 12px/1.4 "Nanum gothic", "malgun gothic", Helvetica, sans-serif, ve
 .rank_text_wrap {float: right;}
 .rank_text {font-size: 18px; font-weight: bold;;}
 
-.detail_bottom p { line-height: 30px; font-size: 16px; color: #333;}
+.detail_bottom ul li { line-height: 30px; font-size: 16px; color: #333;}
