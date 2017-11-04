@@ -50,4 +50,8 @@ table {
 .hidden {
   text-indent: -9999px;
   font-size: 1px;
+  line-height: 0;
+  height: 0;
+  display: block;
+  overflow: hidden;
 }
