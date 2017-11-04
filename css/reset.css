@@ -48,6 +48,10 @@ table {
 	border-spacing: 0;
 }
 .hidden {
+	display: block;
+	height: 0;
+	overflow: hidden;
+	line-height: 0;
   text-indent: -9999px;
   font-size: 1px;
 }

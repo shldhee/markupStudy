@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body { font: 12px/1.4 "Nanum gothic", "malgun gothic", Helvetica, sans-serif, verdana; color: #000;}
-
+a {color: inherit;}
 #wrap { width: 560px; margin: 0 auto; padding: 20px; }
 
 .tit { padding-bottom: 10px; border-bottom: 1px dashed #ccc; }
@@ -12,23 +12,21 @@ body { font: 12px/1.4 "Nanum gothic", "malgun gothic", Helvetica, sans-serif, ve
 .image_wrap { display: table-cell; width: 100px; padding-right: 20px; vertical-align: top; }
 .image_wrap img {width: 100px; height: 150px;}
 
-.detail { display: table-cell; vertical-align: top;}
+.detail { width: 100%; display: table-cell; vertical-align: top;}
 
 .detail_top { padding-bottom: 8px; margin-bottom: 8px; border-bottom: 1px solid #ccc;}
 .detail_top:after { content: ""; clear: both; display: block; }
-.sub_tit { float: left; font-size: 24px; font-weight: bold; color: #00f;}
+.sub_tit { max-width: 290px; overflow: hidden; float: left; white-space: nowrap; text-overflow: ellipsis; font-size: 24px; font-weight: bold; color: #00f;}
 
-.rank_box { position: relative; float: right; }
+.rank_box { display: block; overflow: hidden; position: relative; margin: 5px 0; text-align: right; }
 .rank_box:after { content: ""; clear: both; display: block; }
 
-.rank_star_wrap {position: relative; top:6px; right: 10px; float: left; width: 74px; height: 12px; }
+.rank_star_wrap { display: inline-block; width: 74px; height: 12px; margin: 6px 0; vertical-align: top; background: url(../images/ico_star.png) 0 -14px no-repeat; }
 
 
-.bg_star, .active_star {position: absolute; top:0; left:0;}
-.bg_star {display: block; width: 100%; height: 12px; background: url(../images/ico_star.png) 0 -14px no-repeat;}
-.active_star {display: block; width: 86.2%; height: 12px; background: url(../images/ico_star.png) 0 0 no-repeat;}
+.active_star { display: block; height: 12px; background: url(../images/ico_star.png) 0 0 no-repeat;}
 
-.rank_text_wrap {float: right;}
-.rank_text {font-size: 18px; font-weight: bold;;}
+.rank_text_wrap { display: inline-block; vertical-align: top; }
+.rank_text {font-size: 18px; font-weight: bold;}
 
 .detail_bottom ul li { line-height: 30px; font-size: 16px; color: #333;}
