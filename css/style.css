@@ -18,19 +18,16 @@ a { color: inherit;}
 
 .detail_top { padding-bottom: 8px; margin-bottom: 8px; border-bottom: 1px solid #ccc;}
 .detail_top:after { content: ""; clear: both; display: block; }
-.sub_tit { float: left; font-size: 24px; font-weight: bold; color: #00f;}
+.sub_tit { max-width: 310px; display: block; float: left; font-size: 24px; font-weight: bold; color: #00f; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 .rank_box { position: relative; float: right; }
 .rank_box:after { content: ""; clear: both; display: block; }
 
-.rank_star_wrap {position: relative; top:6px; right: 10px; float: left; width: 74px; height: 12px; }
+.rank_star_wrap {display: inline-block; width: 74px; height: 12px; margin-top: 6px; background: url(../images/ico_star.png) 0 -14px no-repeat;}
 
+.active_star {display: block; vertical-align: top; height: 12px; background: url(../images/ico_star.png) 0 0 no-repeat;}
 
-.bg_star, .active_star {position: absolute; top:0; left:0;}
-.bg_star {display: block; width: 100%; height: 12px; background: url(../images/ico_star.png) 0 -14px no-repeat;}
-.active_star {display: block; width: 86.2%; height: 12px; background: url(../images/ico_star.png) 0 0 no-repeat;}
-
-.rank_text_wrap {float: right;}
+.rank_text_wrap {display: inline-block; vertical-align: top;}
 .rank_text {font-size: 18px; font-weight: bold;;}
 
 .detail_bottom ul li { line-height: 30px; font-size: 16px; color: #333;}
