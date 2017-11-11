@@ -27,6 +27,9 @@ time, mark, audio, video {
   text-decoration: none;
   color: #000;
 }
+
+body { font: 12px/1.4 "Nanum gothic", "malgun gothic", dotum, Helvetica, Verdana, Sans-serif; color: #000;}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
