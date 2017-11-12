@@ -1,6 +1,21 @@
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 $width: 100%;
 
+@mixin clearboth {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.list_item {
+  float: left;
+}
+
+.sp {
+  display: inline-block;
+  background-image: url(./sp_common.png);
+  background-size: 250px 233px;
+}
 
 .skip {
   width: $width;
@@ -28,7 +43,112 @@ $width: 100%;
     padding: 0 20px;
     background-color: #00c73c;
 
+    .logo_wrap {
+      float: left;
+    }
+    .btn_wrap {
+      float: right;
+    }
 
+    &:after {
+      @include clearboth;
+    }
   }
 
+  .header_bottom {
+    position: relative;
+    box-sizing: border-box;
+    width: $width;
+    height: 40px;
+    padding: 0 20px;
+
+  }
+}
+
+.header_top {
+  .logo_wrap {
+    margin-top: 13px;
+
+    .main_logo, .sub_logo {
+      float: left;
+    }
+
+    .logo {
+      background-position: -30px -124px;
+      width: 48px;
+      height: 10px;
+    }
+
+    .post {
+      background-position: -30px -72px;
+      width: 48px;
+      height: 14px;
+    }
+
+    &:after {
+      @include clearboth;
+    }
+  }
+
+  .btn_wrap {
+    margin-top: 7px;
+    .search {
+      background-position: 0 -36px;
+      width: 91px;
+      height: 30px;
+      margin-right: 2px;
+    }
+    .post {
+      background-position: 0 0;
+      width: 107px;
+      height: 30px;
+    }
+  }
+}
+
+.header_bottom {
+  .nav {
+    width: 414px;
+    margin: 0 auto;
+    padding: 9px 0 8px 0;
+
+    .nav_list:after {
+      @include clearboth;
+    }
+
+    .list_item {
+      width: 25%;
+      font-size: 14px;
+      text-align: center;
+      > a {
+        display: inline-block;
+        width: $width;
+      }
+    }
+
+    .best {
+      color: #00b336;
+    }
+
+    .first {
+      box-sizing: border-box;
+      width: 15px;
+      height: 14px;
+      vertical-align: middle;
+      background-position: -206px -21px;
+      margin-top: -1px;
+      margin-right: 3px;
+    }
+  }
+
+  .news {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    border: 1px solid #ddd;
+    padding: 4px 14px;
+    &:hover {
+      color: #00b336;
+    }
+  }
 }

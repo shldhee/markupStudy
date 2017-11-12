@@ -51,10 +51,17 @@ table {
 	border-spacing: 0;
 }
 .hidden {
-  text-indent: -9999px;
+  /* text-indent: -9999px;
   font-size: 1px;
   line-height: 0;
   height: 0;
   display: block;
-  overflow: hidden;
+  overflow: hidden; */
+
+  overflow: hidden!important;
+  position: absolute!important;
+  clip: rect(0 0 0 0)!important;
+  width: 1px!important;
+  height: 1px!important;
+  margin: -1px!important;
 }
