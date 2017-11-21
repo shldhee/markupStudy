@@ -178,6 +178,11 @@ $width: 100%;
     margin: 0 auto 34px;
     border-bottom: 1px solid #bbbbbb;
   }
+
+  .rank_wrap {
+    width: 924px;
+    margin: 0 auto 23px;
+  }
 }
 
 // 본문 탭메뉴 영역
@@ -253,5 +258,114 @@ $width: 100%;
   }
   &:after {
     @include clearboth;
+  }
+}
+
+.rank_top_list {
+  > .toprank_box:first-child {
+    margin-left: 0;
+  }
+  .toprank_box {
+    float: left;
+    margin-left: 12px;
+
+    .rank_link {
+      overflow: hidden;
+      position: relative;
+      display: inline-block;
+      width: 300px;
+      height: 247px;
+    }
+    .rank_number {
+      position: absolute;
+      top: 90px;
+      left: 0;
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      font-size: 29px;
+      background-color: #a07f2f;
+      text-align: center;
+      line-height: 45px;
+      font-family: Helvetica;
+      color: #fff;
+      &:after {
+        position: absolute;
+        content: '';
+        height: 2px;
+        width: 16px;
+        background-color: #fff;
+        left: 23px;
+        bottom: 16px;
+      }
+
+    }
+
+    .image_wrap {
+      width: 300px;
+      height: 140px;
+    }
+
+    .rank_image {
+      width: auto;
+      height: 100%;
+      margin-left: -29px;
+    }
+
+    .text_wrap {
+      padding: 20px;
+      width: 258px;
+      height: 64px;
+      border: 1px solid #e6e6e6;
+    }
+
+    .title {
+      margin-bottom: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      white-space: normal;
+      -webkit-line-clamp: 2;
+      line-height: 1.4;
+      -webkit-box-orient: vertical;
+      word-wrap: break-word;
+      font-size: 17px;
+    }
+
+    .field {
+      position: relative;
+      font-size: 13px;
+      color: #00c73c;
+      padding-right: 10px;
+      margin-right: 10px;
+      font-weight: bold;
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 10px;
+        background-color: #d8d8d8;
+        position: absolute;
+        top: 3px;
+        right: 0;
+      }
+    }
+
+    .from {
+      color: #aaa;
+    }
+  }
+  &:after {
+    @include clearboth;
+  }
+  .no2 {
+    .rank_number {
+      background-color: #8e8f91;
+    }
+  }
+  .no3 {
+    .rank_number {
+      background-color: #877157;
+    }
   }
 }
