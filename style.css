@@ -196,6 +196,10 @@
   margin: 0 auto 34px;
 }
 
+#container .rank_content.top {
+  margin-bottom: 364px;
+}
+
 .tabmenu_wrap {
   margin-bottom: 40px;
 }
@@ -528,4 +532,116 @@
 .rank_link .image_wrap .rank_image {
   height: 100%;
   margin-left: -27px;
+}
+
+.recommand_wrap {
+  position: absolute;
+  top: 1190px;
+  left: 0;
+  width: 100%;
+  height: 314px;
+  background-color: #f7f7f7;
+  background: #f7f7f7;
+}
+
+.recommand_box {
+  position: relative;
+  width: 924px;
+  margin: 0 auto;
+  padding: 36px 0;
+}
+
+.recommand_box .title {
+  padding-bottom: 20px;
+  font-size: 17px;
+}
+
+.recommand_box .title .bold {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.recommand_box .more {
+  position: absolute;
+  top: 38px;
+  right: 0;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.recommand_list:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.recommand_list .list-item {
+  float: left;
+  margin-left: 11px;
+}
+
+.recommand_list .list-item:first-child {
+  margin-left: 0;
+}
+
+.recommand_list .recommand_link {
+  position: relative;
+  display: inline-block;
+  width: 174px;
+  height: 196px;
+  border: 1px solid #d5d5d5;
+}
+
+.recommand_list .recommand_link .bg_wrap {
+  height: 78px;
+  background: url(http://post.phinf.naver.net/MjAxNzAyMTRfMTYg/MDAxNDg3MDY2NzkzNDA3.YXto-3Zz8rolOco_2oufYUcJKjUGq3JtMqtzerb8HZUg.q9lc9TB2RN79ZQ9DWF8MAPZjszrFYFgad5Ex8s_cR_0g.JPEG/post_7626158680867619505.jpg?type=f218_218) 0 0 no-repeat;
+}
+
+.recommand_list .recommand_link .image_icon {
+  position: absolute;
+  left: 50%;
+  top: 36px;
+  margin-left: -31px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: 1px solid #e8e8e8;
+}
+
+.recommand_list .recommand_link .text_wrap {
+  padding: 33px 26px 22px;
+  text-align: center;
+}
+
+.recommand_list .recommand_link .text_wrap .from {
+  font-size: 15px;
+  padding-bottom: 6px;
+}
+
+.recommand_list .recommand_link .text_wrap .desc {
+  padding-top: 6px;
+  font-size: 13px;
+  color: #909090;
+}
+
+#footer {
+  width: 100%;
+  height: 117px;
+  padding: 25px 0;
+  background-color: #f9f9f9;
+  border-top: 1px solid #c9ccce;
+  text-align: center;
+}
+
+#footer .btn_top {
+  font-size: 13px;
+  color: #444;
+  font-weight: bold;
+}
+
+#footer .top {
+  margin-right: 3px;
+  width: 10px;
+  height: 10px;
+  background-position: -227px -182px;
 }
