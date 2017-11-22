@@ -7,6 +7,38 @@ $width: 100%;
   clear: both;
 }
 
+@mixin title {
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  white-space: normal;
+  -webkit-line-clamp: 2;
+  line-height: 1.4;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  font-size: 17px;
+}
+
+@mixin field {
+  position: relative;
+  font-size: 13px;
+  color: #00c73c;
+  padding-right: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: #d8d8d8;
+    position: absolute;
+    top: 3px;
+    right: 0;
+  }
+}
+
 .list_item {
   float: left;
 }
@@ -118,11 +150,11 @@ $width: 100%;
 
     .list_item {
       width: 25%;
-      font-size: 14px;
       text-align: center;
       > a {
         display: inline-block;
         width: $width;
+        font-size: 14px;
       }
     }
 
@@ -182,6 +214,14 @@ $width: 100%;
   .rank_wrap {
     width: 924px;
     margin: 0 auto 23px;
+    .rank_top {
+      margin-bottom: 18px;
+    }
+  }
+
+  .rank_content {
+    width: 984px;
+    margin: 0 auto 34px;
   }
 }
 
@@ -320,35 +360,11 @@ $width: 100%;
     }
 
     .title {
-      margin-bottom: 10px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      white-space: normal;
-      -webkit-line-clamp: 2;
-      line-height: 1.4;
-      -webkit-box-orient: vertical;
-      word-wrap: break-word;
-      font-size: 17px;
+      @include title;
     }
 
     .field {
-      position: relative;
-      font-size: 13px;
-      color: #00c73c;
-      padding-right: 10px;
-      margin-right: 10px;
-      font-weight: bold;
-      &:after {
-        content: '';
-        display: inline-block;
-        width: 1px;
-        height: 10px;
-        background-color: #d8d8d8;
-        position: absolute;
-        top: 3px;
-        right: 0;
-      }
+      @include field
     }
 
     .from {
@@ -366,6 +382,101 @@ $width: 100%;
   .no3 {
     .rank_number {
       background-color: #877157;
+    }
+  }
+}
+
+// 4,5,6,7,8,9위
+
+.rank_content_list {
+  position: relative;
+  overflow: hidden;
+  left: -60px;
+  .rank_box {
+    float: left;
+    margin-left: 60px;
+
+    .rank_link {
+      display: inline-block;
+      width: 432px;
+      height: 94px;
+      padding-top: 13px;
+      &:after {
+        @include clearboth;
+      }
+    }
+  }
+  &:after {
+    @include clearboth;
+  }
+}
+
+.rank_link {
+  .number_wrap {
+    float: left;
+    position: relative;
+    padding: 0 4px;
+  }
+
+  .number {
+    font-size: 29px;
+    font-family: Helvetica-Light;
+  }
+
+  .move-number {
+    position: absolute;
+    bottom: -10px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Helvetica;
+    &.up {
+      color: #ff4467;
+      &:before {
+        border-width: 6px 4px 6px 4px;
+        border-color:  transparent transparent #ff4467 transparent;
+      }
+    }
+    &.down {
+      color: #3d87ff;
+      &:before {
+        margin-bottom: -5px;
+        border-width: 6px 4px 6px 4px;
+        border-color: #3d87ff transparent transparent transparent;
+      }
+    }
+    &:before {
+      content: '';
+      display: inline-block;
+      margin-bottom: 1px;
+      margin-right: 2px;
+      border: 4px solid #ff4467;
+      border-top-width: 6px;
+    }
+  }
+
+  .text_wrap {
+    width: 257px;
+    padding: 0 12px;
+    float: left;
+    .title {
+      @include title;
+    }
+    .field {
+      @include field
+    }
+    .from {
+      color: #aaa;
+    }
+  }
+
+  .image_wrap {
+    overflow: hidden;
+    width: 120px;
+    height: 68px;
+    float: right;
+    .rank_image {
+      height: 100%;
+      margin-left: -27px;
     }
   }
 }
