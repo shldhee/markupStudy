@@ -637,6 +637,8 @@
   font-size: 13px;
   color: #444;
   font-weight: bold;
+  display: inline-block;
+  margin-bottom: 30px;
 }
 
 #footer .top {
@@ -644,4 +646,55 @@
   width: 10px;
   height: 10px;
   background-position: -227px -182px;
+}
+
+#footer .footer_list {
+  margin-bottom: 8px;
+}
+
+#footer .list-item {
+  display: inline-block;
+}
+
+#footer .list-item:first-child .btn {
+  margin-left: 0;
+}
+
+#footer .list-item .btn {
+  display: inline-block;
+  font-size: 13px;
+  margin-left: 7px;
+  padding: 6px 11px;
+  border: 1px solid #ccc;
+}
+
+#footer .text_wrap {
+  margin-bottom: 8px;
+}
+
+#footer .text_wrap .btn {
+  font-size: 13px;
+  color: #999;
+}
+
+#footer .text_wrap .customer {
+  position: relative;
+  padding-right: 8px;
+  margin-right: 4px;
+}
+
+#footer .text_wrap .customer:after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background-color: #ebebeb;
+  position: absolute;
+  top: 3px;
+  right: 0;
+}
+
+#footer .copyright {
+  color: #999;
+  font-size: 13px;
 }
