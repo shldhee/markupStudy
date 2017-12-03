@@ -327,12 +327,12 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
 .visual_wrap .slick-current .img_dim {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .tabmenu_wrap {
@@ -457,6 +457,7 @@
 }
 
 .rank_top_list .toprank_box .rank_link {
+  display: inline-block;
   overflow: hidden;
   position: relative;
   width: 300px;
@@ -601,7 +602,7 @@
 }
 
 .rank_link .state_wrap {
-  margin-top: -10px;
+  margin-top: -5px;
 }
 
 .rank_link .state_wrap .state {
@@ -772,8 +773,36 @@
 }
 
 .recommand_list .recommand_link .bg_wrap {
+  position: relative;
   height: 78px;
   background: url(http://post.phinf.naver.net/MjAxNzAyMTRfMTYg/MDAxNDg3MDY2NzkzNDA3.YXto-3Zz8rolOco_2oufYUcJKjUGq3JtMqtzerb8HZUg.q9lc9TB2RN79ZQ9DWF8MAPZjszrFYFgad5Ex8s_cR_0g.JPEG/post_7626158680867619505.jpg?type=f218_218) 0 0 no-repeat;
+}
+
+.recommand_list .recommand_link .bg_wrap:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  content: '';
+}
+
+.recommand_list .recommand_link .bg2 {
+  background-image: url(http://post.phinf.naver.net/20160713_2/cine_play_1468400809803oI95J_JPEG/cine_play_270535967761954502.jpg?type=f218_218);
+}
+
+.recommand_list .recommand_link .bg3 {
+  background-image: url(http://post.phinf.naver.net/MjAxNzExMjhfMjYg/MDAxNTExODYwMDQ2Mjcy.6kmelIfcJW8dlGmTLcT4zOQIX8-lmp0ufKMvv6voz6Eg.D7QMIVgywYw8mb1loJnV0QUDrIHXKGKy_jH-GulPUu4g.JPEG/post_3792834365627916667.jpg?type=f218_218);
+}
+
+.recommand_list .recommand_link .bg4 {
+  background-image: url(http://post.phinf.naver.net/20161014_115/1476401562124jl8m2_PNG/ewaynews_5142828330990620856.png?type=f218_218);
+}
+
+.recommand_list .recommand_link .bg5 {
+  background-image: url(http://post.phinf.naver.net/MjAxNzA1MjlfMjc0/MDAxNDk2MDIxMzkyOTgy.ORrX6nPyck2Ee-EaIckN6hRrM8u90Xp6oP1FiOFw508g.rFOyJDG8w76hyihIXeK0TOalB0zu4XjT4hkaDAUeaF0g.JPEG/post_3522364319243729486.jpg?type=f218_218);
 }
 
 .recommand_list .recommand_link .image_icon {
@@ -784,7 +813,6 @@
   width: 62px;
   height: 62px;
   border-radius: 50%;
-  border: 1px solid #e8e8e8;
 }
 
 .recommand_list .recommand_link .text_wrap {
@@ -876,4 +904,11 @@
 #footer .copyright {
   color: #999;
   font-size: 13px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .visual_wrap .slider__list {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
